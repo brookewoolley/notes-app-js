@@ -6,9 +6,10 @@ function testNotesList(){
   noteList.addNote(note1);
   noteList.addNote(note2);
   noteList.addNote(note3);
-  assert.isTrue(noteList.notes.length === 3);
-// create test to return values of array
-
+  console.log("Testing for array length: " + assert.isTrue(noteList.notes.length === 3));
+  console.log("Testing for returning list of note: " + assert.isTrue(noteList.returnNotesList().includes(note1, note2, note3)));
 };
+
+
 
 testNotesList();

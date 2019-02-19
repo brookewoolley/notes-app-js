@@ -1,4 +1,5 @@
 (function(exports) {
+
   function NotesList() {
     this.notes = [];
     var text = new Note(text);
@@ -10,7 +11,6 @@
 
   NotesList.prototype.returnNotesList = function() {
     return this.notes;
-    console.log(this.notes);
   };
 
   exports.NotesList = NotesList;
