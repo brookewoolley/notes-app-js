@@ -2,7 +2,6 @@
 
   function NotesList() {
     this.notes = [];
-    var text = new Note(text);
   };
 
   NotesList.prototype.addNote = function(text) {
