@@ -3,10 +3,13 @@
   };
 
   ViewNoteList.prototype.printNotes = function(notelist) {
+    html = "<ul>"
     for (var i = 0; i < notelist.returnNotesList().length; i++) {
-      console.log("<li><div>" + notelist.returnNotesList()[i].printNote() + "</div></li>");
+      html += ("<li><div>" + notelist.returnNotesList()[i].printNote() + "</div></li>");
     }
+    return html + "</ul>"
   };
+
 
   exports.ViewNoteList = ViewNoteList;
 

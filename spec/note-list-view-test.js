@@ -5,7 +5,7 @@ function testView() {
   noteListTest.addNote(note1);
   noteListTest.addNote(note2);
   var newview = new ViewNoteList(noteListTest);
-  console.log("Testing for display: " + assert.isTrue(newview.printNotes(noteListTest) === ("<li><div>Hello</div></li>")));
+  console.log("Testing for display: " + assert.isTrue(newview.printNotes(noteListTest) === ("<ul><li><div>Hello</div></li><li><div>Goodbye</div></li></ul>")));
 
 }
 

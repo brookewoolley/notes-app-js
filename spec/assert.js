@@ -5,12 +5,11 @@ var assert = {
       else {
         return ("Test passed");
       };
-    }
-  // },
+  },
 
-  // isEqual: function(assertionToCheck, assertionToCheckAgainst) {
-  //   if (assertionToCheck === assertionToCheckAgainst) {
-  //     throw new Error("Assertion failed: " + assertionToCheck + " is not equal");
-  //   }
-  // }
+  isEqual: function(assertionToCheck, assertionToCheckAgainst) {
+    if (assertionToCheck !== assertionToCheckAgainst) {
+      throw new Error("Assertion failed: " + assertionToCheck + " is not equal");
+    }
+  }
 };
