@@ -5,7 +5,8 @@
   };
 
   NotesList.prototype.addNote = function(text) {
-    this.notes.push(text)
+    var note = new Note(text)
+    this.notes.push(note)
   };
 
   NotesList.prototype.returnNotesList = function() {
