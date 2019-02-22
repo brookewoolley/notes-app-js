@@ -3,13 +3,16 @@
 (function(exports) {
 
   function Controller(notesList) {
-    notesList.addNote('Favourite drink: seltzer')
     this.notesView = new ViewNoteList(notesList)
   }
 
   Controller.prototype.printResults = function() {
     let results = this.notesView.printNotes()
-    document.getElementById('app').innerHTML = results
+    return this.HTML().innerHTML = results
+  }
+
+  Controller.prototype.HTML = function() {
+    return document.getElementById('app')
   }
 
   exports.Controller = Controller
