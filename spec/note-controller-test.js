@@ -10,7 +10,7 @@ function checkingInnerHTML() {
   }
 
   console.log("Mocking for innerHTML property: " + assert.isTrue(controller.printResults()
-  === "<ul><li><div>Favourite drink: sel</div></li></ul>"));
+  === "<ul><li><div><a href='#notes/11'>Favourite drink: sel</a></div></li></ul>"));
 };
 
 checkingInnerHTML();
